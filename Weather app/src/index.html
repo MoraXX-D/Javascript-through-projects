@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class=" bg-black">
+  <div class="w-90 max-w-470 bg-gradient-to-r from-teal-400 to-purple-500 text-white mt-100 mx-auto rounded-xl pt-10 pb-9  text-center">
+    <div id="search" class="w-100 flex items-center justify-between pl-5 pr-5 ">
+      <input type="text" placeholder="Enter the city name" spellcheck="false" class="border-0 outline-none bg-emerald-100 pl-8 pr-6 h-16 rounded-full flex-1 mr-4 text-lg">
+      <button class="border-0 outline-none bg-emerald-100 rounded-full w-16 h-16 cursor-pointer ">
+        <img class="w-6"src="/images/search.png" >
+      </button>
+    </div>
+    <div id="error" class=" text-left ml-2 text-sm mt-2 pl-4 hidden">
+      <p>Invalid city name</p>
+    </div>
+    <div id="weather" class="hidden">
+      <img id="weather-icon"  src="/images/rain.png" class="w-44 mt-10">
+      <h1 id="temp" class="text-7xl font-medium">22°C</h1>
+      <h2 id="city" class="text-5xl font-normal -mt-2">Jaipur</h2>
+      <div id="details" class="flex items-center justify-between pl-5 pr-5 mt-12">
+        <div id="col" class="flex items-center text-left">
+          <img src="/images/humidity.png" class="w-10 mr-2" >
+          <div>
+            <p id="humidity" class="text-3xl -mt-1">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div id="col" class="flex items-center text-left">
+          <img src="/images/wind.png" class="w-10 mr-2" >
+          <div>
+            <p id="wind" class="text-3xl -mt-1">15km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/src/script.js"></script>
+</body>
+</html>
